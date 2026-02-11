@@ -15,7 +15,6 @@ Aqui você encontrará alguns dos meus principais projetos acadêmicos e pessoai
 - **JavaScript** — Lógica, interatividade e manipulação do DOM
 - **Node.js** — Fundamentos de back-end e JavaScript no servidor
 - **SQL** — Conceitos de banco de dados relacionais
-- **Java** — Programação orientada a objetos
 - **C#** — Lógica e desenvolvimento de aplicações
 
 ---
