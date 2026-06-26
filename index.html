@@ -4,64 +4,345 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nathalia Rayssa — Portfólio</title>
-  <link rel="icon" type="image/svg+xml" href="../assets/code-solid-full.svg">
-  <link rel="stylesheet" href="../CSS/style.css">
+  <meta name="description" content="Portfólio de Nathalia Rayssa de Paula — desenvolvedora em formação. Projetos de back-end, APIs, IA e front-end com foco em desenvolvimento de software.">
+  <meta name="author" content="Nathalia Rayssa de Paula">
+
+  <link rel="icon" type="image/svg+xml" href="assets/code-solid-full.svg">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <h1>Nathalia Rayssa de Paula</h1>
-      <p class="subtitle">Desenvolvedora em formação</p>
-    </div>
+  <!-- Glows de fundo decorativos -->
+  <div class="bg-decor" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
 
-    <nav class="menu">
-      <a href="index.html" class="active">Início</a>
-      <a href="quem.html">Quem sou eu</a>
-      <a href="projetos.html">Projetos</a>
-      <a href="contato.html">Contato</a>
+  <!-- HEADER -->
+  <header class="topbar" id="topo">
+    <a href="#inicio" class="brand">
+      <span class="brand-mark"><i class="fa-solid fa-code"></i></span>
+      <span class="brand-text">
+        <strong>Nathalia Rayssa de Paula</strong>
+        <span class="subtitle">Systems development</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="menu" id="menu">
+      <a href="#inicio" class="active">Início</a>
+      <a href="#sobre">Quem sou eu</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <main class="hero">
-    <div class="hero-content">
-      <h2>Bem-vindo(a) ao meu portfólio 💜</h2>
-      <p>
-        Aqui compartilho minha trajetória, habilidades e projetos desenvolvidos como estudante de <strong>Sistemas de Informação</strong> na PUC Minas.  
-        Este é um espaço para mostrar minha evolução como futura desenvolvedora.
-      </p>
-      <a href="projetos.html" class="btn">Ver Projetos</a>
-    </div>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">👋 Olá, seja bem-vindo(a) ao meu portfólio</p>
+        <h1 class="hero-title">
+          Construindo soluções com
+          <span class="gradient-text">código e curiosidade</span> 💜
+        </h1>
+        <p class="hero-text">
+          Sou estudante de <strong>Sistemas de Informação</strong> na PUC Minas e apaixonada por
+          desenvolvimento de software. Aqui compartilho minha trajetória, habilidades e os projetos
+          que marcam minha evolução como desenvolvedora.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projetos" class="btn">
+            <i class="fa-solid fa-folder-open"></i> Ver Projetos
+          </a>
+          <a href="#contato" class="btn btn-outline">
+            <i class="fa-regular fa-paper-plane"></i> Fale comigo
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/nathaliardepaula/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/nathrdp" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:nathaliardpaula@gmail.com" aria-label="E-mail">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-down" aria-label="Rolar para baixo">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+      <div class="section-head reveal">
+        <span class="section-tag">Sobre mim</span>
+        <h2>Quem sou eu 💜</h2>
+      </div>
+
+      <div class="about-card reveal">
+        <p>Olá! Me chamo <strong>Nathalia</strong>, tenho 20 anos e atualmente curso
+        <strong>Sistemas de Informação</strong> na Pontifícia Universidade Católica de Minas Gerais.
+        Sempre fui muito curiosa e fascinada por inovações tecnológicas — tudo sempre me pareceu incrível!</p>
+
+        <p>Sempre gostei de ciências e química também, o que gerou uma dúvida na hora de escolher o curso.
+        Mas, como já dei spoiler, a <strong>tecnologia ganhou o empasse</strong>. A ideia de poder criar
+        qualquer coisa e ser útil de tantas formas me encanta, e o aprendizado constante me fisgou
+        completamente.</p>
+
+        <p>Atualmente, atuo como <strong>Desenvolvedora de Software Trainee na Distribuidora Gama</strong>,
+        colocando em prática o que aprendo e crescendo dia após dia. Tenho grande interesse em
+        <strong>desenvolvimento de software e sistemas</strong>, e estou sempre aberta a novos desafios!</p>
+
+        <ul class="about-highlights">
+          <li><i class="fa-solid fa-graduation-cap"></i> Sistemas de Informação · PUC Minas</li>
+          <li><i class="fa-solid fa-location-dot"></i> Minas Gerais, Brasil</li>
+          <li><i class="fa-solid fa-briefcase"></i> Desenvolvedora de Software Trainee · Distribuidora Gama</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section skills" id="skills">
+      <div class="section-head reveal">
+        <span class="section-tag">Habilidades</span>
+        <h2>Habilidades técnicas 👩🏽‍💻</h2>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-card"><i class="devicon-javascript-plain colored"></i><strong>JavaScript</strong><span>Lógica e interatividade</span></div>
+        <div class="skill-card"><i class="devicon-typescript-plain colored"></i><strong>TypeScript</strong><span>Tipagem e robustez</span></div>
+        <div class="skill-card"><i class="devicon-nodejs-plain colored"></i><strong>Node.js</strong><span>Back-end e APIs</span></div>
+        <div class="skill-card"><i class="devicon-express-original"></i><strong>Express</strong><span>APIs REST</span></div>
+        <div class="skill-card"><i class="devicon-prisma-original"></i><strong>Prisma</strong><span>ORM e modelagem</span></div>
+        <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><strong>PostgreSQL</strong><span>Banco de dados</span></div>
+        <div class="skill-card"><i class="devicon-php-plain colored"></i><strong>PHP</strong><span>Back-end web</span></div>
+        <div class="skill-card"><i class="devicon-laravel-original colored"></i><strong>Laravel</strong><span>Framework PHP</span></div>
+        <div class="skill-card"><i class="devicon-python-plain colored"></i><strong>Python</strong><span>FastAPI e automação</span></div>
+        <div class="skill-card"><i class="fa-solid fa-robot" style="color:#7a34db"></i><strong>LangChain</strong><span>Apps com IA / LLMs</span></div>
+        <div class="skill-card"><i class="fa-solid fa-comment-dots" style="color:#0096fa"></i><strong>Blip</strong><span>Chatbots e automação</span></div>
+        <div class="skill-card"><i class="devicon-csharp-plain colored"></i><strong>C#</strong><span>Orientação a objetos</span></div>
+        <div class="skill-card"><i class="devicon-figma-plain colored"></i><strong>Figma</strong><span>Prototipagem</span></div>
+        <div class="skill-card"><i class="devicon-git-plain colored"></i><strong>Git</strong><span>Versionamento</span></div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:48px;">
+        <h3>Habilidades comportamentais</h3>
+      </div>
+      <div class="soft-grid reveal">
+        <span class="soft-pill"><i class="fa-solid fa-comments"></i> Comunicação eficaz</span>
+        <span class="soft-pill"><i class="fa-solid fa-list-check"></i> Organização</span>
+        <span class="soft-pill"><i class="fa-solid fa-people-group"></i> Trabalho em equipe</span>
+        <span class="soft-pill"><i class="fa-solid fa-bolt"></i> Aprendizado rápido</span>
+        <span class="soft-pill"><i class="fa-solid fa-lightbulb"></i> Resolução de problemas</span>
+        <span class="soft-pill"><i class="fa-solid fa-language"></i> Inglês intermediário</span>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section projects" id="projetos">
+      <div class="section-head reveal">
+        <span class="section-tag">Portfólio</span>
+        <h2>Meus principais projetos</h2>
+        <p class="section-sub">Uma seleção de projetos de back-end, APIs, IA e front-end.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJETO 1 — DESTAQUE -->
+        <article class="project-card featured reveal">
+          <span class="featured-badge"><i class="fa-solid fa-star"></i> Destaque</span>
+          <div class="project-top">
+            <span class="project-num">01</span>
+            <i class="fa-brands fa-whatsapp project-icon"></i>
+          </div>
+          <h3>Finance Agent</h3>
+          <p>
+            Agente financeiro pessoal que funciona pelo WhatsApp: você manda mensagens em linguagem
+            natural ("gastei 35 no almoço", "qual meu saldo?") e o agente registra gastos, controla
+            orçamentos, acompanha cartões e envia lembretes de contas.
+          </p>
+          <div class="project-tags">
+            <span>FastAPI</span><span>IA Groq / Llama 3.3</span><span>Twilio</span><span>Supabase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Nathrdp/finance-agent" target="_blank" rel="noopener" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> Código no GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJETO 2 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">02</span>
+            <i class="fa-solid fa-feather project-icon"></i>
+          </div>
+          <h3>GrowTwitter API</h3>
+          <p>
+            Rede social estilo Twitter (de gatinhos) com autenticação JWT, criação de tweets e replies,
+            curtidas, follows e feed personalizado. Stack de back-end robusta.
+          </p>
+          <div class="project-tags">
+            <span>Node.js</span><span>TypeScript</span><span>Express</span><span>Prisma</span><span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="https://growtwitter-api-2.onrender.com" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver deploy
+            </a>
+            <a href="https://github.com/Nathrdp/growTwitter-api" target="_blank" rel="noopener" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJETO 3 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">03</span>
+            <i class="fa-solid fa-paw project-icon"></i>
+          </div>
+          <h3>API de Pets</h3>
+          <p>
+            API REST com CRUD completo de pets, incluindo validações e tratamento de erros. Com deploy
+            ativo — demonstra fundamentos de back-end de forma limpa.
+          </p>
+          <div class="project-tags">
+            <span>Node.js</span><span>Express</span><span>API REST</span>
+          </div>
+          <div class="project-links">
+            <a href="https://api-de-pets-9s3v.onrender.com" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver deploy
+            </a>
+            <a href="https://github.com/Nathrdp/API-de-Pets" target="_blank" rel="noopener" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJETO 4 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">04</span>
+            <i class="fa-solid fa-fire project-icon"></i>
+          </div>
+          <h3>Habit Heatmap</h3>
+          <p>
+            App web de acompanhamento de hábitos com heatmap visual inspirado no GitHub Contributions,
+            cálculo de streak, dark mode e persistência local. JavaScript puro.
+          </p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>HTML</span><span>CSS</span><span>LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://nathrdp.github.io/habit-heatmap/" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver projeto
+            </a>
+            <a href="https://github.com/Nathrdp/habit-heatmap" target="_blank" rel="noopener" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJETO 5 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">05</span>
+            <i class="fa-solid fa-coins project-icon"></i>
+          </div>
+          <h3>Nikel — Controle Financeiro</h3>
+          <p>
+            Mini sistema financeiro com cadastro, login, lançamentos de entradas/saídas e persistência
+            em LocalStorage. Desenvolvido durante o curso Codaí da Growdev.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+          </div>
+          <div class="project-links">
+            <a href="https://nathrdp.github.io/ProjetoNikel-Codai/" target="_blank" rel="noopener" class="project-link">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver projeto
+            </a>
+            <a href="https://github.com/Nathrdp/ProjetoNikel-Codai" target="_blank" rel="noopener" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+        </article>
+
+        <!-- PROJETO 6 -->
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">06</span>
+            <i class="fa-solid fa-book project-icon"></i>
+          </div>
+          <h3>Estante Virtual</h3>
+          <p>
+            Aplicação Laravel para organizar livros, com integração à API do Google Books (busca por
+            título, autor ou ISBN), notas, status de leitura e layout responsivo.
+          </p>
+          <div class="project-tags">
+            <span>PHP</span><span>Laravel 12</span><span>API Google Books</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Nathrdp/estante-virtual" target="_blank" rel="noopener" class="project-link secondary">
+              <i class="fa-brands fa-github"></i> Código no GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contact-page" id="contato">
+      <div class="contact-card reveal">
+        <span class="section-tag">Contato</span>
+        <h2>Vamos conversar? 💜</h2>
+        <p class="contact-sub">Obrigada pela visita! Fico feliz em receber mensagens sobre oportunidades, projetos ou só um oi.</p>
+
+        <div class="contact-links">
+          <a href="mailto:nathaliardpaula@gmail.com" class="contact-link">
+            <i class="fa-regular fa-envelope"></i>
+            <span><strong>E-mail</strong>nathaliardpaula@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/nathaliardepaula/" target="_blank" rel="noopener" class="contact-link">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span><strong>LinkedIn</strong>/in/nathaliardepaula</span>
+          </a>
+          <a href="https://github.com/nathrdp" target="_blank" rel="noopener" class="contact-link">
+            <i class="fa-brands fa-github"></i>
+            <span><strong>GitHub</strong>github.com/nathrdp</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <section class="skills">
-    <h3>Habilidades técnicas👩🏽‍💻</h3>
-
-    <div class="skills-grid">
-      <div class="skill-card"><strong>HTML</strong><br><span>Estrutura e semântica</span></div>
-      <div class="skill-card"><strong>CSS</strong><br><span>Design e responsividade</span></div>
-      <div class="skill-card"><strong>JavaScript</strong><br><span>Lógica e interatividade</span></div>
-      <div class="skill-card"><strong>SQL</strong><br><span>Banco de dados</span></div>
-      <div class="skill-card"><strong>Java</strong><br><span>Lógica de programação</span></div>
-      <div class="skill-card"><strong>C#</strong><br><span>Fundamentos e orientação a objetos</span></div>
-      <div class="skill-card"><strong>Node.js</strong><br><span>Lógica de back-end e APIs básicas</span></div>
-      <div class="skill-card"><strong>Figma</strong><br><span>Prototipagem</span></div>
-      <div class="skill-card"><strong>VS Code</strong><br><span>Ambiente de desenvolvimento</span></div>
-      <div class="skill-card"><strong>Inglês</strong><br><span>Intermediário (escrita, leitura e oralidade)</span></div>
-      <div class="skill-card"><strong>Aprimorando...</strong><br><span>Sempre buscando conhecimento</span></div>
-    </div>
-
-    <h3>Habilidades comportamentais</h3>
-    <div class="skills-grid">
-      <div class="skill-card">Comunicação eficaz</div>
-      <div class="skill-card">Organização</div>
-      <div class="skill-card">Trabalho em equipe</div>
-      <div class="skill-card">Aprendizado rápido</div>
-      <div class="skill-card">Resolução de problemas</div>
-    </div>
-  </section>
-
   <footer class="site-footer">
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/nathaliardepaula/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/nathrdp" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:nathaliardpaula@gmail.com" aria-label="E-mail"><i class="fa-regular fa-envelope"></i></a>
+    </div>
     <p>2026 | Por Nathalia de Paula 💜</p>
   </footer>
+
+  <script src="JS/main.js"></script>
 </body>
 </html>
